@@ -1,0 +1,17 @@
+.menu {
+  position: relative;
+
+  &>.menu-container {
+    position        : absolute;
+    display         : none;
+    box-shadow      : 0.00px 9.00px 15px 0px rgba(89, 89, 89, 0.32);
+    padding         : 1rem;
+    background-color: white;
+    z-index         : 999;
+    width           : max-content;
+
+    &.active {
+      display: grid;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.main {
+  &>section {
+    &.part-1 {
+      &>.main-container {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        flex-direction : column;
+
+        &>.label {
+          font-size     : 120px;
+          font-weight   : bolder;
+          padding       : 2rem 5rem;
+          text-align    : center;
+          line-height   : 120px;
+          letter-spacing: -7.2px;
+        }
+
+        &>.description {
+          font-size : 24px;
+          text-align: center;
+        }
+
+        &>.action {
+          cursor        : pointer;
+          margin        : 2rem;
+          color         : #00A113;
+          font-size     : 20px;
+          display       : grid;
+          grid-auto-flow: column;
+          align-items   : center;
+          gap           : 5px;
+        }
+      }
+    }
+
+    &.part-2 {
+      background-color: #FCFCFC;
+      padding         : 5rem 0;
+
+      &>.main-container {
+        display        : flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

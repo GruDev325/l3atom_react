@@ -1,0 +1,59 @@
+header {
+  padding      : 14px 0;
+  border-bottom: 1px solid #DBDBDB;
+
+  &>.main-container {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    &>.logo {
+      background: no-repeat center/contain url('/assets/images/logo.webp');
+      width     : 139px;
+      height    : 43px;
+    }
+
+    &>ul {
+      display       : grid;
+      grid-auto-flow: column;
+      gap           : 50px;
+      width         : fit-content;
+      align-items   : center;
+
+      .about-menu {
+        display  : grid;
+        gap      : 2rem;
+        max-width: 300px;
+
+        &>li {
+          display              : grid;
+          grid-template-columns: min-content 1fr;
+          gap                  : 1rem;
+
+          &>.image {
+            color    : black;
+            font-size: 2rem;
+          }
+
+          &>.content {
+            &>.description {
+              opacity  : 0.5;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .start-building {
+        border          : 1px solid rgb(0, 87, 225);
+        color           : rgb(0, 87, 225);
+        background-color: transparent;
+        padding         : 0.5rem 1rem;
+
+        &:hover {
+          color: rgba($color: #000000, $alpha: 0.5);
+        }
+      }
+    }
+  }
+}

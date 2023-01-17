@@ -1,0 +1,21 @@
+.home-card-01 {
+  display: grid;
+  cursor : pointer;
+
+  &>div {
+    justify-self: center;
+    display     : grid;
+    text-align  : center;
+  }
+
+  &>.image {
+    width     : 36px;
+    height    : 36px;
+    background: no-repeat center/contain;
+  }
+
+  &>.description {
+    font-size: 10px;
+    opacity  : 0.5;
+  }
+}
